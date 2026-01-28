@@ -633,5 +633,67 @@ span{
     
 }
 
+@media screen and (max-width: 420px) and (min-width: 360px) {
+    /* KHUSUS HP UKURAN REDMI NOTE 9 PRO */
+
+    html {
+        font-size: 50%;
+    }
+
+    /* HEADER */
+    .header {
+        padding: 1.8rem 5%;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 80%;
+        display: none;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+        background: rgba(0,0,0,0.95);
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    /* HOME */
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 3rem;
+        padding-top: 14rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+        max-width: 260px;
+    }
+
+    /* PROJECT CARD */
+    .projects-box {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-card {
+        max-width: 100%;
+        padding: 3rem 2rem;
+    }
+
+    /* CERTIFICATE */
+    .certificate-box {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 
